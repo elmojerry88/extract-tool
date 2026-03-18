@@ -1,0 +1,21 @@
+[project]
+name = "extract-tool"
+version = "0.1.0"
+description = "Ferramenta para extrair arquivos ZIP/RAR e coletar fontes TTF"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "rarfile>=4.2",
+    "rich>=13.9",
+    "typer>=0.15",
+]
+
+[project.scripts]
+extract-tool = "extract_tool.main:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = []
